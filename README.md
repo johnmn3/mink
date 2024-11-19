@@ -161,7 +161,7 @@ clj -M -m cljs.main -re ws -w src
 
 `repl.ws` quazi-vendors the `cljs.repl.ws` and `cljs.server.ws` namespaces, allowing the cljs.main machinery to do all the work.
 
-When you pass a `-re blah` flag to `cljs.main`, it will look for a namespace called `cljs.repl.ws` and use it just like it would natively for `cljs.repl.node` or `cljs.repl.browser`. This makes the implementation quite simple. Whether `repl.ws` will be able to use all of `cljs.main`'s flags is TBD.
+When you pass a `-re blah` flag to `cljs.main`, it will look for a namespace called `cljs.repl.blah` and use it just like it would natively for `cljs.repl.node` or `cljs.repl.browser`. This makes the implementation quite simple. Whether `repl.ws` will be able to use all of `cljs.main`'s flags is TBD.
 
 ## repl switching
 
