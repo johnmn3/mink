@@ -25,3 +25,5 @@ linux-install-*
 /.portal/
 /out/
 /.shadow-cljs/
+
+/.DS_Store

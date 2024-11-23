@@ -1,14 +1,15 @@
 (ns ex.core
   (:require
-   [clojure.browser.ws :as ws]
+   [mink.browser :as otr]
    [ex.stuff :as stuff]))
 
 (enable-console-print!)
 
-(when-not (ws/alive?)
-  (ws/connect "ws://localhost:9001"))
+(when-not (otr/alive?)
+  (otr/connect (str "ws://" (or otr/host-name "localhost") ":" (or otr/ws-port 9001))))
 
-(when (ws/alive?)
+(when (otr/alive?)
   (println "Loaded example"))
 
 (stuff/do-stuff)
+

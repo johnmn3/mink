@@ -1,9 +1,3 @@
-# compile
+# run
 
-`clj -M -m cljs.main -c ex.core`
-
-or,
-
-# run (compiles too)
-
-`clj -M -m cljs.main -re ws -r -w src`
+Try: `clj -M -m mink.main -p 9002 -P 9003 -c ex.core -r -w src`

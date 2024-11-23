@@ -1,5 +1,6 @@
 {:path ["src"]
  :deps {org.clojure/clojure {:mvn/version "1.12.0"}
         org.clojure/clojurescript {:mvn/version "1.11.132"}
-        org.github.johnmn3/repl.ws {:local/root "../"
-                                    #_#_:exclusions [org.slf4j/slf4j-nop]}}}
+        org.github.johnmn3/mink {:local/root "../"
+                                 #_#_:exclusions [org.slf4j/slf4j-nop]}}}
+  ;; uncomment to this slf4j-nop ^^^^ to enable slf4j logs
