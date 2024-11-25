@@ -96,22 +96,6 @@ And a `src/ex/core.cljs` like this:
   (otr/connect "ws://localhost:9000"))
 ```
 
-And with an `index.html` like this:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-	<div id="app"></div>
-    <script src="out/main.js" type="text/javascript"></script>
-  </body>
-</html>
-```
-
 Launch a `mink` repl:
 
 ```clojure
